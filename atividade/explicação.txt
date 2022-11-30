@@ -1,0 +1,17 @@
+Aluno: Ian Lohan Aráujo Vasconcelos
+Matricula: 202108463094
+
+################################################################################
+OBS: É necessario abrir o projeto pelo localhost do Apache para o funcionamento.
+################################################################################
+
+Criei um projeto simples com apenas 2 páginas, uma página com um formulário de login, e uma página mostrando os dados recebidos pelo formulário.
+
+A página irá validar os dados quando o usuário clicar em Enviar, e apenas irá abrir a proxima página caso todos os dados estejam validados corretamente.
+
+O email deve estar no formato de email.
+A senha deve conter no minimo 7 caracteres e ser confirmada no campo seguinte.
+
+Após os dados serem validados corretamente, eles serão enviados para a proxima página e escritos utilizando php. 
+
+Há um botão Voltar na página seguinte, que permite retornar a página de Login.
