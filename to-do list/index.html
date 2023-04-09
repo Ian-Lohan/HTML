@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- JS -->
+    <!-- JS -->
     <script src="script.js" defer></script>
 </head>
 
@@ -21,6 +21,7 @@
         <header>
             <h1>Lista de Tarefas</h1>
         </header>
+        <!-- Campo Adicionar Tarefa -->
         <form id="todo-form">
             <p>Adicionar:</p>
             <div class="form-control">
@@ -30,6 +31,7 @@
                 </button>
             </div>
         </form>
+        <!-- Campo Editar Tarefa -->
         <form id="edit-form" class="hide">
             <p>Editar:</p>
             <div class="form-control">
@@ -40,16 +42,19 @@
             </div>
             <button id="cancel-edit-btn">Cancelar</button>
         </form>
+        <!-- Campo Pesquisar Tarefa -->
         <div id="toolbar">
             <div id="search">
                 <h4>Pesquisar:</h4>
                 <form>
                     <input type="text" id="search-input" placeholder="Buscar..." />
+                    <!-- Botão Apagar Pesquisa -->
                     <button id="erase-button">
                         <i class="fa-solid fa-delete-left"></i>
                     </button>
                 </form>
             </div>
+            <!-- Caixa Filtrar -->
             <div id="filter">
                 <h4>Filtrar:</h4>
                 <select id="filter-select">
@@ -59,6 +64,7 @@
                 </select>
             </div>
         </div>
+        <!-- Lista de Tarefas -->
         <div id="todo-list">
         </div>
     </div>
