@@ -12,12 +12,12 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-  }
+}
 
 button {
     background-color: #fdfdfd;
-    color: #102f5e;
-    border: 2px solid #102f5e;
+    color: #333;
+    border: 2px solid #333;
     padding: 0.3rem 0.6rem;
     font-size: 1rem;
     cursor: pointer;
@@ -28,7 +28,7 @@ button {
 }
 
 button:hover {
-    background-color: #102f5e;
+    background-color: #333;
 }
 
 button:hover>i {
@@ -37,7 +37,7 @@ button:hover>i {
 
 button i {
     pointer-events: none;
-    color: #102f5e;
+    color: #333;
     font-weight: bold;
 }
 
@@ -48,12 +48,13 @@ select {
 
 .hide {
     display: none;
+    border-bottom: none;
 }
 
-/* Cabeçalho de Tarefas */
+/* Cabeçalho */
 .todo-container {
-    max-width: 450px;
-    margin: 3rem auto 0;
+    max-width: 900px;
+    margin: 2.5rem auto 0;
     background-color: #fdfdfd;
     padding: 1.5rem;
     border-radius: 15px;
@@ -83,12 +84,18 @@ select {
 }
 
 .form-control input {
+    width: 100%;
     margin-right: 0.3rem;
 }
 
 #cancel-edit-btn {
     margin-top: 1rem;
-    color: #444;
+    color: #333;
+    font-weight: bold;
+}
+
+#cancel-edit-btn:hover {
+    color: white;
 }
 
 /* Caixa de Ferramentas */
@@ -120,6 +127,11 @@ select {
     margin-right: 0.3rem;
 }
 
+#erase-button:hover {
+    background: red;
+    border-color: red;
+}
+
 #filter {
     width: 35%;
     display: flex;
@@ -131,12 +143,18 @@ select {
 }
 
 /* Lista de Tarefas */
+
+#list-header {
+    margin: 0.5rem;
+    margin-left: 1em;
+}
+
 .todo {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 1rem;
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5px;
     transition: 0.3s;
 }
 
@@ -150,11 +168,20 @@ select {
 }
 
 .done {
-    background: #395169;
+    background: green;
 }
 
 .done h3 {
     color: #fff;
-    text-decoration: line-through;
     font-style: italic;
+}
+
+button.finish-todo:hover {
+    background: green;
+    border-color: green;
+}
+
+button.remove-todo:hover {
+    background: red;
+    border-color: red;
 }

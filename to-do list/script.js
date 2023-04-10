@@ -1,6 +1,7 @@
 // Seleção de Elementos
 const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-input");
+const headers = document.querySelectorAll("h4");
 const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
@@ -61,6 +62,13 @@ const toggleForms = () => {
     editForm.classList.toggle("hide");
     todoForm.classList.toggle("hide");
     todoList.classList.toggle("hide");
+    searchInput.classList.toggle("hide");
+    eraseBtn.classList.toggle("hide");
+    filterBtn.classList.toggle("hide");
+
+    headers.forEach(h4 => {
+        h4.classList.toggle("hide");
+    });
 };
 
 // Atualiza as Lista de Tarefas
