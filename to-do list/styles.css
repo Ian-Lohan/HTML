@@ -50,7 +50,7 @@ select {
     display: none;
 }
 
-/* To-Do Header */
+/* Cabeçalho de Tarefas */
 .todo-container {
     max-width: 450px;
     margin: 3rem auto 0;
@@ -65,7 +65,7 @@ select {
     border-bottom: 1px solid #ccc;
 }
 
-/* To-Do Form */
+/* Formulário */
 #todo-form,
 #edit-form {
     padding: 1rem;
@@ -91,7 +91,7 @@ select {
     color: #444;
 }
 
-/* To-Do Toolbar */
+/* Caixa de Ferramentas */
 #toolbar {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
@@ -130,7 +130,7 @@ select {
     flex: 1;
 }
 
-/* To-Do List */
+/* Lista de Tarefas */
 .todo {
     display: flex;
     justify-content: space-around;
